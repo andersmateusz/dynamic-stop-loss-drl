@@ -1,0 +1,14 @@
+digraph G {
+concentrate=True;
+dpi=200;
+rankdir=TB;
+splines=ortho;
+node [shape=record];
+13171460432 [border=0, fontname=Helvetica, label=<<table border="0" cellborder="1" bgcolor="black" cellpadding="10"><tr><td colspan="2" bgcolor="black"><font point-size="16" color="white"><b>Dense_0</b> (Dense)</font></td></tr><tr><td bgcolor="white"><font point-size="14">Input shape: <b>(None, 15)</b></font></td><td bgcolor="white"><font point-size="14">Output shape: <b>(None, 256)</b></font></td></tr></table>>, margin=0];
+13171459376 [border=0, fontname=Helvetica, label=<<table border="0" cellborder="1" bgcolor="black" cellpadding="10"><tr><td colspan="2" bgcolor="black"><font point-size="16" color="white"><b>Dense_1</b> (Dense)</font></td></tr><tr><td bgcolor="white"><font point-size="14">Input shape: <b>(None, 256)</b></font></td><td bgcolor="white"><font point-size="14">Output shape: <b>(None, 256)</b></font></td></tr></table>>, margin=0];
+13171470848 [border=0, fontname=Helvetica, label=<<table border="0" cellborder="1" bgcolor="black" cellpadding="10"><tr><td colspan="2" bgcolor="black"><font point-size="16" color="white"><b>dropout_2</b> (Dropout)</font></td></tr><tr><td bgcolor="white"><font point-size="14">Input shape: <b>(None, 256)</b></font></td><td bgcolor="white"><font point-size="14">Output shape: <b>(None, 256)</b></font></td></tr></table>>, margin=0];
+13265008112 [border=0, fontname=Helvetica, label=<<table border="0" cellborder="1" bgcolor="black" cellpadding="10"><tr><td colspan="2" bgcolor="black"><font point-size="16" color="white"><b>Output</b> (Dense)</font></td></tr><tr><td bgcolor="white"><font point-size="14">Input shape: <b>(None, 256)</b></font></td><td bgcolor="white"><font point-size="14">Output shape: <b>(None, 11)</b></font></td></tr></table>>, margin=0];
+13171460432 -> 13171459376  [penwidth=2];
+13171459376 -> 13171470848  [penwidth=2];
+13171470848 -> 13265008112  [penwidth=2];
+}
